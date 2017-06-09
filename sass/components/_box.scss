@@ -10,9 +10,6 @@
     margin-right: -50%;
     transform: translate(-50%, -50%);
   }
-  &:hover{
-    @include hover-style;
-  }
   @include respond-to("small") {
     @include grid-column(6);
   };

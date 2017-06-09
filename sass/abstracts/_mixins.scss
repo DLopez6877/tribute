@@ -1,12 +1,16 @@
-@mixin box-style {
-  min-height: 100px;
-  width: 100px;
-  border: 1px solid $color5;
-  background-color: lighten($color5, 10%);
-  margin-top: 20px;
-}
 
 @mixin hover-style {
   box-shadow: 0 0 30px $color0;
 
+}
+
+@mixin box-style {
+  min-height: $box-height;
+  width: 100px;
+  border: 1px solid $color5;
+  background-color: lighten($color5, 10%);
+  margin-top: 20px;
+  &:hover{
+    @include hover-style;
+  }
 }

@@ -1,3 +1,18 @@
+.gallery-item {
+  $icons: young book computer work apple wife;
+  height: $box-height;
+  background-size: contain;
+
+  @each $icon in $icons{
+    &.#{$icon} {
+      background-image: url('../img' + '/#{$icon}.jpg');
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+    }
+  }
+}
+
 @mixin respond-to($breakpoint) {
   $raw-query: map-get($breakpoints, $breakpoint);
 

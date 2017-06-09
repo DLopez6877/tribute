@@ -1,0 +1,30 @@
+.gallery {
+  margin-top: $page-margin ;
+  h3{
+    margin-bottom: $page-margin * .5;
+    text-align: center;
+    border-bottom: 4px solid $color2;
+  }
+}
+
+.gallery-item {
+  @include box-style;
+  @include grid-column(6);
+}
+
+.gallery-box {
+  @include box-style;
+  @include grid-column(6);
+  opacity: .3;
+  position: relative;
+  @include respond-to('large'){
+    @include grid-column(4);
+  };
+  &::before {
+    content: "steve";
+    position: absolute;
+    top: 50%;
+    font-size: 11em;
+    transform: translateY(-50%);
+  }
+}
