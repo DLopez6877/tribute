@@ -36,6 +36,9 @@ p {
   font-family: 'sf display';
   src: url(../fonts/sf.otf);
 }
+blockquote {
+  color: $color4;
+}
 
 @font-face {
   font-family: 'sf thin';

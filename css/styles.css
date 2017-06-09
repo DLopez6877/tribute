@@ -570,6 +570,10 @@ p {
   font-family: 'sf display';
   src: url(../fonts/sf.otf);
 }
+blockquote {
+  color: #9b9b9b;
+}
+
 @font-face {
   font-family: 'sf thin';
   src: url(../fonts/sf-thin.ttf);
@@ -638,6 +642,11 @@ section::after {
   box-shadow: 0 0 30px #887c5c;
 }
 
+.inventor h2 {
+  margin-top: 20vmax;
+  margin-bottom: 10vmax;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -674,9 +683,6 @@ footer h6 {
 }
 .device img {
   width: 100%;
-}
-.device blockquote {
-  color: #887c5c;
 }
 
 .device-background {
