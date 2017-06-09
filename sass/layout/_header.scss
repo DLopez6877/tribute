@@ -3,7 +3,7 @@ header {
   margin: 0 auto;
   h6 {
     margin-top: $page-margin * .5;
-    margin-bottom: $page-margin *2;
+    margin-bottom: $page-margin * .75;
     border-bottom: 3px solid $color1;
   }
   &:not(h6) {
@@ -27,4 +27,13 @@ header {
     top: 50%;
     left: 0;
   }
+}
+
+.mainquote {
+  font-size: 2.5em;
+  margin-bottom: $page-margin * .5;
+  color: saturate($color1, 50%);
+  font-style: italic;
+  text-align: center;
+  opacity: .5;
 }

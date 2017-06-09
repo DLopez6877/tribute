@@ -592,7 +592,7 @@ header {
 }
 header h6 {
   margin-top: 10vmax;
-  margin-bottom: 40vmax;
+  margin-bottom: 15vmax;
   border-bottom: 3px solid #919e8d;
 }
 header:not(h6) {
@@ -617,6 +617,15 @@ header h2 {
   left: 0;
 }
 
+.mainquote {
+  font-size: 2.5em;
+  margin-bottom: 10vmax;
+  color: #79d358;
+  font-style: italic;
+  text-align: center;
+  opacity: .5;
+}
+
 .container {
   width: 90%;
   margin-left: 5%;
@@ -637,8 +646,9 @@ section::after {
 .about {
   text-align: right;
   margin-bottom: 20vmax;
+  margin-right: 5%;
 }
-.about:hover {
+.about h5:hover {
   box-shadow: 0 0 30px #887c5c;
 }
 
