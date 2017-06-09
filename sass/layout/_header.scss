@@ -1,10 +1,17 @@
 header {
   h6 {
     margin-top: $page-margin * .5;
+    margin-bottom: $page-margin *2;
     border-bottom: 3px solid $color1;
   }
-  .device {
-    margin-top: $page-margin;
-    margin-bottom: $page-margin * 2;
+  &:not(h6) {
+    text-align: right;
+    // line-height: 2em;
+  }
+  h5 {
+    margin-bottom: $page-margin;
+  }
+  img {
+    max-width: 100%;
   }
 }

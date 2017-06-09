@@ -481,6 +481,10 @@ table {
   box-sizing: border-box;
 }
 
+.fade-half {
+  opacity: 0;
+}
+
 h1 {
   font-size: 7em;
   color: #b9c1b6;
@@ -534,11 +538,17 @@ h2, h4, h6, p {
 
 header h6 {
   margin-top: 5vmax;
+  margin-bottom: 20vmax;
   border-bottom: 3px solid #b9c1b6;
 }
-header .device {
-  margin-top: 10vmax;
-  margin-bottom: 20vmax;
+header:not(h6) {
+  text-align: right;
+}
+header h5 {
+  margin-bottom: 10vmax;
+}
+header img {
+  max-width: 100%;
 }
 
 .container {
@@ -550,6 +560,11 @@ section::after {
   clear: both;
   content: "";
   display: table;
+}
+
+.innovation .device {
+  margin-top: 10vmax;
+  margin-bottom: 20vmax;
 }
 
 .about {

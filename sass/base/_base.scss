@@ -1,3 +1,7 @@
 :not(body):not(html) {
   box-sizing:border-box;
 }
+
+.fade-half {
+  opacity: 0;
+}

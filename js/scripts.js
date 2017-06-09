@@ -11,16 +11,13 @@ $(window).scroll(function() {
      }
  });
 
-// fade-half class
-$(window).scroll(function(){
-  var sT = $(window).scrollTop(), wH = $(window).height();
-  $('.fade-half').each(function(){
-    var ths = $(this);
-    if(sT + wH > ths.offset().top + (ths.height()/2)){
-      ths.fadeOut(2000);
-    };
-  });
+ // fade-half
+ $(window).scroll(function () {
+  if ($(window).scrollTop() > 300) {
+    $('.fade-half').fadeTo(2000, 1);
+  }
 });
+
 
 // fade in box
 $(document).ready(function() {
