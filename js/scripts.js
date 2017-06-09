@@ -11,10 +11,10 @@ $(window).scroll(function() {
      }
  });
 
- // fade-half
+ // fadepoint
  $(window).scroll(function () {
-  if ($(window).scrollTop() > 300) {
-    $('.fade-half').fadeTo(2000, 1);
+  if ($(window).scrollTop() > 500) {
+    $('.device').fadeTo(2000, 1);
   }
 });
 
