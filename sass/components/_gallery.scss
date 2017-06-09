@@ -24,7 +24,10 @@
     content: "steve";
     position: absolute;
     top: 50%;
-    font-size: 11em;
+    font-size: 6em;
     transform: translateY(-50%);
+    @include respond-to('x-small'){
+      font-size: 11em;
+    };
   }
 }
