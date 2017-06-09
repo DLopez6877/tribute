@@ -11,16 +11,16 @@ $page-margin: 20vmax;
 $box-height: 200px;
 
 // colors
-$color1: #b9c1b6;
-$color2: #becfc7;
-$color3: #cbd1c7;
-$color4: #c1c1c1;
-$color5: #bdcec4;
-$color6: #d1d7cd;
-$color7: #dbded3;
-$color8: #d1d1c7;
-$color9: #c8c9c1;
-$color0: #cbc4b2;
+$color1: darken(#b9c1b6, 15%);
+$color2: darken(#becfc7, 15%);
+$color3: darken(#cbd1c7, 15%);
+$color4: darken(#c1c1c1, 15%);
+$color5: darken(#bdcec4, 15%);
+$color6: darken(#d1d7cd, 15%);
+$color7: darken(#dbded3, 15%);
+$color8: darken(#d1d1c7, 15%);
+$color9: darken(#c8c9c1, 15%);
+$color0: darken(#cbc4b2, 30%);
 
 
 // device

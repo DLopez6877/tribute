@@ -8,7 +8,7 @@
   min-height: $box-height;
   width: 100px;
   border: 1px solid $color5;
-  background-color: lighten($color5, 10%);
+  background-color: lighten($color5, 30%);
   margin-top: 20px;
   &:hover{
     @include hover-style;
