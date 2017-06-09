@@ -1,8 +1,8 @@
 $breakpoints: (
-  'x-small': (max-width: 415px),
-  'small': (max-width: 660px),
-  'medium': (max-width: 800px),
-  'large': (max-width: 1100px),
+  'x-small': (min-width: 415px),
+  'small': (min-width: 660px),
+  'medium': (min-width: 800px),
+  'large': (min-width: 1100px),
   'x-large': (min-width: 1470px),
 );
 
@@ -23,3 +23,4 @@ $color0: #cbc4b2;
 $device-text-color: white;
 $device-background: url(../img/device-bg.jpg);
 $device-backside-background: grey;
+$device-padding: 0 50px 30px 50px;

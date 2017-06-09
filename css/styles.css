@@ -477,6 +477,10 @@ table {
   border-spacing: 0;
 }
 
+:not(body):not(html) {
+  box-sizing: border-box;
+}
+
 h1 {
   font-size: 7em;
   color: #b9c1b6;
@@ -528,28 +532,53 @@ h2, h4, h6, p {
   font-family: 'sf thin';
 }
 
-.device-background {
-  background: url(../img/device-bg.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 20em;
+header h6 {
+  margin-top: 5vh;
+}
+header .device {
+  margin-top: 10vh;
+  margin-bottom: 10vh;
+}
+
+section {
+  text-align: right;
+}
+section::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+
+.device {
+  position: relative;
+}
+.device::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.device .device-text {
+  text-align: center;
+  padding: 0 50px 30px 50px;
+}
+.device .device-text h4 {
+  padding-top: 20px;
+}
+.device img {
   width: 100%;
 }
-.device-background .device-text {
-  padding: 2em;
+.device blockquote {
+  color: #cbc4b2;
 }
-.device-background .device-text h4 {
-  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
-  color: white;
-  font-size: 4.5em;
-  margin: 0 0 0.5em 0;
-  padding-bottom: 0.5em;
-  text-align: center;
-}
-.device-background .device-text blockquote {
-  color: white;
-  line-height: 1.5em;
-  margin-bottom: 1.5em;
+
+.device-background {
+  border-radius: 15px;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: .8;
+  padding: 0 50px 30px 50px;
 }
 
 /*# sourceMappingURL=styles.css.map */
