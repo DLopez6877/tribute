@@ -552,6 +552,11 @@ section::after {
   display: table;
 }
 
+.about {
+  text-align: right;
+  margin-bottom: 10vmax;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -560,16 +565,15 @@ footer {
   background-color: inherit;
   display: inline-block;
 }
+footer h6 {
+  display: inline-block;
+  width: 70%;
+}
 
 #scroll {
   width: 100px;
   display: inline-block;
   float: right;
-}
-
-h6 {
-  display: inline-block;
-  width: 25%;
 }
 
 .device {
@@ -620,7 +624,6 @@ h6 {
   display: table;
 }
 .fade-in-element p {
-  color: #333;
   line-height: 1.5em;
 }
 
@@ -631,6 +634,57 @@ h6 {
 .js-fade-element-show {
   opacity: 1;
   transition: all 0.4s ease-in-out;
+}
+
+.sliding-panel-content {
+  position: fixed;
+  top: 0;
+  right: auto;
+  bottom: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  background: white;
+  -webkit-overflow-scrolling: touch;
+  overflow-y: auto;
+  transform: translateX(-100%);
+  transition: all 0.25s linear;
+  z-index: 999999;
+}
+.sliding-panel-content p {
+  color: #92afa1;
+  line-height: 2em;
+}
+.sliding-panel-content.is-visible {
+  transform: translateX(0);
+}
+
+.sliding-panel-fade-screen {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: black;
+  opacity: 0;
+  transition: all 0.2s ease-in-out;
+  visibility: hidden;
+  z-index: 999998;
+}
+.sliding-panel-fade-screen.is-visible {
+  opacity: 0.4;
+  visibility: visible;
+}
+
+.sliding-panel-h5 {
+  cursor: pointer;
+  display: inline-block;
+  outline: none;
+  padding: 10px 16px;
+  position: relative;
+}
+.sliding-panel-h5 img {
+  height: 1.3em;
 }
 
 /*# sourceMappingURL=styles.css.map */

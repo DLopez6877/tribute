@@ -11,6 +11,17 @@ $(window).scroll(function() {
      }
  });
 
+// fade-half class
+$(window).scroll(function(){
+  var sT = $(window).scrollTop(), wH = $(window).height();
+  $('.fade-half').each(function(){
+    var ths = $(this);
+    if(sT + wH > ths.offset().top + (ths.height()/2)){
+      ths.fadeOut(2000);
+    };
+  });
+});
+
 // fade in box
 $(document).ready(function() {
   var element = document.getElementById("js-fadeInElement");
@@ -33,5 +44,11 @@ $(document).ready(function() {
         $(element).addClass('js-fade-element-hide');
       }
     }
+  });
+
+  // sliding panel
+  $('.sliding-panel-h5,.sliding-panel-fade-screen,.sliding-panel-close').on('click touchstart',function (e) {
+    $('.sliding-panel-content,.sliding-panel-fade-screen').toggleClass('is-visible');
+    e.preventDefault();
   });
 });

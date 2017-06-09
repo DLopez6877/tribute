@@ -25,10 +25,12 @@
   'layout/header',
   'layout/container',
   'layout/section',
+  'layout/about',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
   'components/device',
-  'components/fade-in-element';
+  'components/fade-in-element',
+  'components/sliding-panel';

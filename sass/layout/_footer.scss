@@ -5,15 +5,14 @@ footer {
   width: 100%;
   background-color: inherit;
   display: inline-block;
+  h6 {
+    display: inline-block;
+    width: 70%;
+  }
 }
 
 #scroll {
     width: 100px;
     display: inline-block;
     float: right;
-}
-
-h6 {
-  display: inline-block;
-  width: 25%;
 }
