@@ -1,4 +1,7 @@
 .about {
   text-align: right;
   margin-bottom: $page-margin;
+  &:hover{
+    @include hover-style;
+  }
 }

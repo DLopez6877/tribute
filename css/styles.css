@@ -486,8 +486,13 @@ table {
 }
 
 h1 {
-  font-size: 4.5em;
+  font-size: 1.5em;
   color: #b9c1b6;
+  text-decoration: underline;
+}
+h1:hover {
+  text-decoration: none;
+  text-shadow: -1px 1px 2px #383ae9;
 }
 
 h2 {
@@ -537,18 +542,18 @@ h2, h4, h6, p {
 }
 
 header h6 {
-  margin-top: 5vmax;
-  margin-bottom: 20vmax;
+  margin-top: 10vmax;
+  margin-bottom: 40vmax;
   border-bottom: 3px solid #b9c1b6;
 }
 header:not(h6) {
   text-align: right;
 }
 header h3 {
-  margin-top: 10vmax;
+  margin-top: 20vmax;
 }
 header h5 {
-  margin-bottom: 10vmax;
+  margin-bottom: 20vmax;
 }
 header .h2-background {
   background-image: url(../img/headshot.png);
@@ -575,13 +580,16 @@ section::after {
 }
 
 .innovation .device {
-  margin-top: 10vmax;
-  margin-bottom: 20vmax;
+  margin-top: 20vmax;
+  margin-bottom: 40vmax;
 }
 
 .about {
   text-align: right;
-  margin-bottom: 10vmax;
+  margin-bottom: 20vmax;
+}
+.about:hover {
+  box-shadow: 0 0 30px #cbc4b2;
 }
 
 footer {
@@ -640,10 +648,13 @@ footer h6 {
   border-radius: 3px;
   box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
   line-height: 1.5em;
-  margin-bottom: 4em;
+  margin-bottom: 20vmax;
   padding: 1.5em;
   text-align: center;
   width: 100%;
+}
+.fade-in-element:hover {
+  box-shadow: 0 0 30px #cbc4b2;
 }
 .fade-in-element::after {
   clear: both;
@@ -712,6 +723,29 @@ footer h6 {
 }
 .sliding-panel-h5 img {
   height: 1.3em;
+}
+
+.box {
+  min-height: 100px;
+  width: 100px;
+  border: 1px solid #bdcec4;
+  background-color: #dae4de;
+  margin-top: 20px;
+  width: calc(100% - 40px);
+  float: left;
+  margin-left: 20px;
+  position: relative;
+}
+.box h1 {
+  color: #a0b8aa;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+.box:hover {
+  box-shadow: 0 0 30px #cbc4b2;
 }
 
 /*# sourceMappingURL=styles.css.map */

@@ -12,9 +12,32 @@ $(window).scroll(function() {
  });
 
  // fadepoint
- $(window).scroll(function () {
+$(window).scroll(function () {
   if ($(window).scrollTop() > 500) {
     $('.device').fadeTo(2000, 1);
+  }
+});
+
+$(window).scroll(function () {
+ if ($(window).scrollTop() > 2000) {
+   $('.p1').fadeTo(2000, 1);
+ }
+});
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 2700) {
+    $('.p2').fadeTo(2000, 1);
+  }
+});
+
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 2800) {
+    $('.p3').fadeTo(2000, 1);
+  }
+});
+$(window).scroll(function () {
+  if ($(window).scrollTop() > 3400) {
+    $('.p4').fadeTo(2000, 1);
   }
 });
 

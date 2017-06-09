@@ -5,14 +5,16 @@
   $base-line-height: 1.5em !default;
   $base-spacing: 1.5em !default;
   $dark-gray: #333 !default;
-
+  &:hover{
+    @include hover-style;
+  }
   @include clearfix;
   background: $base-background-color;
   border: 1px solid silver;
   border-radius: $base-border-radius;
   box-shadow: 0 2px 2px transparentize(black, 0.8);
   line-height: $base-line-height;
-  margin-bottom: 4em;
+  margin-bottom: $page-margin;
   padding: $base-spacing;
   text-align: center;
   width: 100%;

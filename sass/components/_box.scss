@@ -1,0 +1,16 @@
+.box {
+  @include box-style;
+  @include grid-column(12);
+  position: relative;
+  h1 {
+    color: darken($color5, 10%);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+  }
+  &:hover{
+    @include hover-style;
+  }
+}
