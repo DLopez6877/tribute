@@ -533,20 +533,43 @@ h2, h4, h6, p {
 }
 
 header h6 {
-  margin-top: 5vh;
+  margin-top: 5vmax;
+  border-bottom: 3px solid #b9c1b6;
 }
 header .device {
-  margin-top: 10vh;
-  margin-bottom: 10vh;
+  margin-top: 10vmax;
+  margin-bottom: 20vmax;
 }
 
-section {
-  text-align: right;
+.container {
+  width: 90%;
+  margin-left: 5%;
 }
+
 section::after {
   clear: both;
   content: "";
   display: table;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  background-color: inherit;
+  display: inline-block;
+}
+
+#scroll {
+  width: 100px;
+  display: inline-block;
+  float: right;
+}
+
+h6 {
+  display: inline-block;
+  width: 25%;
 }
 
 .device {
@@ -572,13 +595,42 @@ section::after {
 }
 
 .device-background {
-  border-radius: 15px;
   position: absolute;
   height: 100%;
   width: 100%;
   z-index: -1;
   opacity: .8;
   padding: 0 50px 30px 50px;
+}
+
+.fade-in-element {
+  background: white;
+  border: 1px solid silver;
+  border-radius: 3px;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.2);
+  line-height: 1.5em;
+  margin-bottom: 4em;
+  padding: 1.5em;
+  text-align: center;
+  width: 100%;
+}
+.fade-in-element::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.fade-in-element p {
+  color: #333;
+  line-height: 1.5em;
+}
+
+.js-fade-element-hide {
+  opacity: 0;
+}
+
+.js-fade-element-show {
+  opacity: 1;
+  transition: all 0.4s ease-in-out;
 }
 
 /*# sourceMappingURL=styles.css.map */

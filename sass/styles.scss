@@ -23,10 +23,12 @@
 // 4. Layout-related sections
 @import
   'layout/header',
+  'layout/container',
   'layout/section',
   'layout/footer';
 
 // 5. Components
 @import
   'components/button',
-  'components/device';
+  'components/device',
+  'components/fade-in-element';

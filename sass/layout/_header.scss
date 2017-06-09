@@ -1,9 +1,10 @@
 header {
   h6 {
-    margin-top: 5vh;
+    margin-top: $page-margin * .5;
+    border-bottom: 3px solid $color1;
   }
   .device {
-    margin-top: 10vh;
-    margin-bottom: 10vh;
+    margin-top: $page-margin;
+    margin-bottom: $page-margin * 2;
   }
 }
