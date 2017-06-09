@@ -1,0 +1,26 @@
+.device-background {
+  background: $device-background;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20em;
+  width: 100%;
+
+  .device-text {
+    padding: 2em;
+
+    h4 {
+      border-bottom: 1px solid transparentize($device-text-color, 0.7);
+      color: $device-text-color;
+      font-size: 4.5em;
+      margin: 0 0 0.5em 0;
+      padding-bottom: 0.5em;
+      text-align: center;
+    }
+
+    blockquote {
+      color: $device-text-color;
+      line-height: 1.5em;
+      margin-bottom: 1.5em;
+    }
+  }
+}

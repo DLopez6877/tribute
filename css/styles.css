@@ -477,4 +477,79 @@ table {
   border-spacing: 0;
 }
 
+h1 {
+  font-size: 7em;
+  color: #b9c1b6;
+}
+
+h2 {
+  font-size: 6em;
+  color: #becfc7;
+}
+
+h3 {
+  font-size: 5em;
+  color: #cbd1c7;
+}
+
+h4 {
+  font-size: 4em;
+  color: #c1c1c1;
+}
+
+h5 {
+  font-size: 3em;
+  color: #bdcec4;
+}
+
+h6 {
+  font-size: 2em;
+  color: #d1d7cd;
+}
+
+p {
+  font-size: 1em;
+  color: #887c5c;
+}
+
+@font-face {
+  font-family: 'sf display';
+  src: url(../fonts/sf.otf);
+}
+@font-face {
+  font-family: 'sf thin';
+  src: url(../fonts/sf-thin.ttf);
+}
+h1, h3, h5 {
+  font-family: 'sf display';
+}
+
+h2, h4, h6, p {
+  font-family: 'sf thin';
+}
+
+.device-background {
+  background: url(../img/device-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20em;
+  width: 100%;
+}
+.device-background .device-text {
+  padding: 2em;
+}
+.device-background .device-text h4 {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+  color: white;
+  font-size: 4.5em;
+  margin: 0 0 0.5em 0;
+  padding-bottom: 0.5em;
+  text-align: center;
+}
+.device-background .device-text blockquote {
+  color: white;
+  line-height: 1.5em;
+  margin-bottom: 1.5em;
+}
+
 /*# sourceMappingURL=styles.css.map */

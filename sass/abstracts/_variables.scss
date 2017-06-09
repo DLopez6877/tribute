@@ -1,0 +1,25 @@
+$breakpoints: (
+  'x-small': (max-width: 415px),
+  'small': (max-width: 660px),
+  'medium': (max-width: 800px),
+  'large': (max-width: 1100px),
+  'x-large': (min-width: 1470px),
+);
+
+// colors
+$color1: #b9c1b6;
+$color2: #becfc7;
+$color3: #cbd1c7;
+$color4: #c1c1c1;
+$color5: #bdcec4;
+$color6: #d1d7cd;
+$color7: #dbded3;
+$color8: #d1d1c7;
+$color9: #c8c9c1;
+$color0: #cbc4b2;
+
+
+// device
+$device-text-color: white;
+$device-background: url(../img/device-bg.jpg);
+$device-backside-background: grey;
