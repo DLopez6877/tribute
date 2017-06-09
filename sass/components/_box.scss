@@ -13,4 +13,16 @@
   &:hover{
     @include hover-style;
   }
+  @include respond-to("small") {
+    @include grid-column(6);
+  };
+  @include respond-to("medium") {
+    @include grid-column(4);
+  };
+  @include respond-to("large") {
+    @include grid-column(3);
+  };
+  @include respond-to("x-large") {
+    @include grid-column(2);
+  };
 }
