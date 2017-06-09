@@ -750,6 +750,8 @@ footer h6 {
   transform: translateX(-100%);
   transition: all 0.25s linear;
   z-index: 999999;
+  padding-right: 20px;
+  font-size: .9em;
 }
 .sliding-panel-content p {
   color: #688c7b;
