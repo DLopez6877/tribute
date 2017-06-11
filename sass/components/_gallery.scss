@@ -1,5 +1,6 @@
 .gallery {
     @include clearfix;
+    margin-bottom: $page-margin;
   .gallery-item {
     @include box-style;
     @include grid-column(6);
