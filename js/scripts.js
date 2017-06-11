@@ -3,12 +3,21 @@ $(window).scroll(function() {
 
     if ($(this).scrollTop()>0)
      {
-        $('#scroll').fadeOut();
+        $('#scroll').fadeOut(2000);
      }
     else
      {
       $('#scroll').fadeIn();
      }
+ });
+
+ // hide footer
+ $(window).scroll(function () {
+  if ($('body').height() <= ($(window).height() + $(window).scrollTop())) {
+    $('footer').hide();
+  } else {
+    $('footer').show();
+  }
  });
 
  // fadepoint
