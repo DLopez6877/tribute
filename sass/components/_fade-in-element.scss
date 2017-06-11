@@ -1,27 +1,22 @@
 .fade-in-element {
-  $base-border-color: gainsboro !default;
-  $base-border-radius: 3px !default;
-  $base-background-color: white !default;
-  $base-line-height: 1.5em !default;
-  $base-spacing: 1.5em !default;
-  $dark-gray: #333 !default;
   &:hover{
     @include hover-style;
   }
+
   @include clearfix;
-  background: $base-background-color;
-  border: 1px solid silver;
-  border-radius: $base-border-radius;
+  background: white;
+  border: 1px solid $color1;
+  border-radius: 3px;
   box-shadow: 0 2px 2px transparentize(black, 0.8);
-  line-height: $base-line-height;
+  line-height: 1.3em;
   margin-bottom: $page-margin;
-  padding: $base-spacing;
   text-align: center;
   width: 100%;
-
-  p {
-    line-height: $base-line-height;
-  }
+  padding: 1.5em;
+  @include respond-to('large') {
+    padding: 5em;
+    line-height: 3.7em;
+  };
 }
 
 .js-fade-element-hide {

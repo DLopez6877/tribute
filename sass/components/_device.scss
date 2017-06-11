@@ -1,5 +1,6 @@
 .device {
   @include clearfix;
+  margin-bottom: $page-margin;
   position: relative;
   .device-text {
     text-align: center;

@@ -5,7 +5,14 @@ h1 {
   &:hover {
     text-decoration: none;
     text-shadow: -1px 1px 2px mix($color1, blue, 30%);
+    cursor: pointer;
   }
+  @include respond-to('large') {
+    font-size: 200%;
+  };
+  @include respond-to('x-large') {
+    font-size: 300%;
+  };
 }
 h2 {
   font-size: 3.5em;
@@ -30,6 +37,12 @@ h6{
 p {
   font-size: 1em;
   color: darken($color0, 30%);
+  @include respond-to('large') {
+    font-size: 200%;
+  };
+  @include respond-to('x-large') {
+    font-size: 300%;
+  };
 }
 
 @font-face {
@@ -51,4 +64,13 @@ h1, h3, h5 {
 
 h2, h4, h6, p {
   font-family: 'sf thin';
+}
+
+h2, h3, h4, h5, h6, blockquote {
+  @include respond-to('large') {
+    font-size: 300%;
+  };
+  @include respond-to('x-large') {
+    font-size: 700%;
+  };
 }
